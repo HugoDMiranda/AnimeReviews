@@ -1,0 +1,33 @@
+nav {
+  background-color: rgb(255, 0, 225);
+  color: white;
+}
+
+.navlink {
+  background-color: white;
+  color: rgb(255, 0, 225);
+  margin: 2px 5px;
+  border-radius: 20px;
+  opacity: 0.8;
+  transition: 0.5s;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 7px;
+  border: none;
+}
+
+.navuser {
+  background-color: rgb(255, 0, 225);
+  color: white;
+  border: 2px solid white;
+  font-weight: 700;
+  margin: 2px 5px;
+  padding: 8px 7px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.navlink:hover {
+  opacity: 1;
+  color: rgb(255, 0, 225);
+}/*# sourceMappingURL=navbar.css.map */

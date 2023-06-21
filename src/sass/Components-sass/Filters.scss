@@ -1,0 +1,105 @@
+@import "../Varibles/Varibles.scss";
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5px;
+  flex-wrap: wrap;
+
+  .search {
+    border: 1px solid $pink;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .dropdown {
+    .dropdownMenu {
+      // position: relative;
+
+      button {
+        background-color: white;
+        border: 3px solid $pink;
+        color: $pink;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 15px;
+        font-size: large;
+        font-weight: 500;
+        z-index: 999;
+        padding: 5px 0;
+      }
+
+      button:focus {
+        z-index: 999;
+      }
+
+      button:hover {
+        background-color: $pink;
+        color: white;
+        border-color: white;
+      }
+
+      button:focus {
+        background-color: $pink;
+        color: white;
+        border-color: white;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+
+      button:focus + .menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+      }
+
+      .menu {
+        position: absolute;
+        background-color: white;
+        border: 3px solid $pink;
+        border-top: none;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.4s ease;
+        z-index: 1;
+
+        li {
+          width: 100%;
+          height: 100%;
+          display: flex;
+        }
+
+        li:hover {
+          background-color: $pink;
+          color: white;
+        }
+
+        .link {
+          color: $pink;
+          text-decoration: none;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .link:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

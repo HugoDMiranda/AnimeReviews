@@ -1,0 +1,30 @@
+@import "../Varibles/Varibles.scss";
+
+.addAnime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 270px;
+  height: 400px;
+  @include glassEffect(0px, 10px);
+  margin: 0px 10px;
+
+  .addLink {
+    color: white;
+    background-color: $pink;
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    font-size: 40px;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+}
+
+.addLink:hover {
+  background-color: white;
+  color: $pink;
+  border-color: $pink;
+}

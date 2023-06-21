@@ -1,0 +1,33 @@
+@import "../sass/Varibles/Varibles.scss";
+
+body {
+  font-family: "Satoshi", sans-serif;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  background-color: $pink;
+  margin: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 2px solid black;
+  background: white;
+  border-radius: 5px;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: $pink;
+  background: $backgroundColor;
+  color: black;
+}

@@ -1,0 +1,140 @@
+@import "./Varibles/Varibles.scss";
+
+.animeReview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.animePage-container {
+  @include pageContainer();
+  flex-direction: row;
+  width: 100%;
+
+  //UPDATE
+
+  .newAnimeImgText {
+    @include info-text;
+    padding: 5px;
+  }
+
+  .newAnimeInf {
+    @include inf();
+
+    .update-error {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      span {
+        @include errorMessage();
+        display: block;
+      }
+    }
+
+    input {
+      border: 1px solid $pink;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .newAnime-name-ratio {
+      @include ratio();
+      flex-wrap: wrap;
+    }
+
+    .newAnimeData {
+      @include data();
+      flex-wrap: wrap;
+
+      select {
+        border: 1px solid $pink;
+        padding: 7px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+
+      h4 {
+        width: 200px;
+      }
+    }
+
+    button {
+      width: 95%;
+      border: 1px solid white;
+      background-color: $pink;
+      color: white;
+      border-radius: 15px;
+      padding: 5px;
+      transition: 0.5s;
+    }
+
+    button:hover {
+      border-color: $pink;
+      background-color: white;
+      color: $pink;
+    }
+  }
+
+  .newAnimeImg {
+    @include animeImg();
+  }
+
+  .newAnimeSynopsis {
+    margin: 10px;
+    width: 95%;
+    height: 200px;
+  }
+
+  //UPDATE
+
+  .animeInf {
+    @include inf();
+
+    textarea {
+      width: 100%;
+      height: 100%;
+      margin: 5px;
+    }
+
+    .anime-name-ratio {
+      @include ratio();
+    }
+
+    .animeData {
+      @include data();
+      flex-wrap: wrap;
+
+      input {
+        display: flex;
+        margin-bottom: 15px;
+        border-radius: 25px;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .animeImg {
+    width: 270px;
+    height: 400px;
+    @include animeImg();
+  }
+
+  .animeSynopsis {
+    @include synopsis();
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include comment-buttons($pink, white);
+  }
+}

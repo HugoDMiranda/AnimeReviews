@@ -1,0 +1,58 @@
+[
+  {
+    "AnimeName": "Bocchi the rock",
+    "Type": "Anime",
+    "Year": "2022",
+    "Status": "Air",
+    "Synopsis": "Hitori Gotou es una estudiante de secundaria que quiere aprender a tocar la guitarra, pero es tan tímida que no tiene amigos. Pero luego de conocer a Nijika Ijichi, una baterista, quizás podrá no solo hacer una amiga, sino además, formar una banda.",
+    "Genders": [" Cosas de la vida", "Musica", "Comedia"],
+    "Ratio": "4.8",
+    "Img": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/0d05002119251179e11dac9cadeaf155.jpe"
+  },
+  {
+    "AnimeName": "Naruto",
+    "Type": "Anime",
+    "Year": "2002",
+    "Status": "Concluded",
+    "Synopsis": "Naruto, un aprendiz de ninja de la Aldea Oculta de Konoha es un chico travieso que desea llegar a ser el Hokage de la aldea para demostrar a todos lo que vale. Lo que descubre al inicio de la historia es que la gente le mira con desconfianza porque en su interior está encerrado el demonio Kyubi que una vez destruyó la aldea, y que el anterior líder de la misma tuvo que encerrar en su cuerpo siendo aún muy pequeño, a coste de su vida. Aunque sus compañeros no saben esto, tampoco le aprecian porque es mal estudiante y siempre está haciendo bromas. Sin embargo, la forma de actuar y la determinación de Naruto demuestran a los demás que puede llegar muy lejos, y el recelo de los otros chicos se va disipando. Naruto y sus compañeros Sakura y Sasuke, junto a su maestro Kakashi tendrán que enfrentarse a una serie de combates y misiones a lo largo de la historia que les permitirán mejorar y crecer.",
+    "Genders": [
+      "Super Poderes",
+      "Shounen",
+      "Artes Marciales",
+      "Comedia",
+      "Accion"
+    ],
+    "Ratio": "4.5",
+    "Img": "https://www.themoviedb.org/t/p/original/7TmKuiLmmoK5NLALkW9cPY7eZwV.jpg"
+  },
+  {
+    "AnimeName": "Kimi no Na wa",
+    "Type": "Movie",
+    "Year": "2016",
+    "Status": "Concluded",
+    "Synopsis": "La 'historia de milagros y amor' gira en torno a Mitsuha y Taki. Mitsuha es una estudiante de secundaria que vive en un pueblo rural situado en las montañas. Su padre es el alcalde y no pasa mucho por casa, ella vive con su hermana pequeña estudiante de primaria y su abuela. Mitsuha tiene una personalidad honesta, pero a ella no le gustan las costumbres del santuario sintoísta de su familia, ni ella ni su padre participan en una campaña electoral. Ella se lamenta de que vive confinada en un pueblo rural y anhela el maravilloso estilo de vida de Tokio. Taki es un estudiante de secundaria que vive en el centro de Tokio. Él pasa su tiempo junto a sus amigos, trabajando a tiempo parcial en un restaurante italiano y está interesado en la arquitectura y las bellas artes. Un día, Mitsuha tiene un sueño en el que ella tiene el cuerpo de un hombre joven. Taki también tiene un sueño parecido y en el que él es una estudiante de secundaria en un pueblo en las montañas en él que nunca ha estado. ¿Cuál es el secreto de sus sueños?",
+    "Genders": ["Sobrenatural", "Colegial", "Romance", "Drama"],
+    "Ratio": "5",
+    "Img": "https://m.media-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "AnimeName": "Bocchi the rock",
+    "Type": "Anime",
+    "Year": "2022",
+    "Status": "Air",
+    "Synopsis": "Hitori Gotou es una estudiante de secundaria que quiere aprender a tocar la guitarra, pero es tan tímida que no tiene amigos. Pero luego de conocer a Nijika Ijichi, una baterista, quizás podrá no solo hacer una amiga, sino además, formar una banda.",
+    "Genders": [" Cosas de la vida", "Musica", "Comedia"],
+    "Ratio": "4.9",
+    "Img": "https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/0d05002119251179e11dac9cadeaf155.jpe"
+  },
+  {
+    "AnimeName": "Kimi no Na wa",
+    "Type": "Movie",
+    "Year": "2016",
+    "Status": "Concluded",
+    "Synopsis": "La 'historia de milagros y amor' gira en torno a Mitsuha y Taki. Mitsuha es una estudiante de secundaria que vive en un pueblo rural situado en las montañas. Su padre es el alcalde y no pasa mucho por casa, ella vive con su hermana pequeña estudiante de primaria y su abuela. Mitsuha tiene una personalidad honesta, pero a ella no le gustan las costumbres del santuario sintoísta de su familia, ni ella ni su padre participan en una campaña electoral. Ella se lamenta de que vive confinada en un pueblo rural y anhela el maravilloso estilo de vida de Tokio. Taki es un estudiante de secundaria que vive en el centro de Tokio. Él pasa su tiempo junto a sus amigos, trabajando a tiempo parcial en un restaurante italiano y está interesado en la arquitectura y las bellas artes. Un día, Mitsuha tiene un sueño en el que ella tiene el cuerpo de un hombre joven. Taki también tiene un sueño parecido y en el que él es una estudiante de secundaria en un pueblo en las montañas en él que nunca ha estado. ¿Cuál es el secreto de sus sueños?",
+    "Genders": ["Sobrenatural", "Colegial", "Romance", "Drama"],
+    "Ratio": "4.6",
+    "Img": "https://m.media-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_FMjpg_UX1000_.jpg"
+  }
+]

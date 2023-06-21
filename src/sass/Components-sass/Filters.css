@@ -1,0 +1,86 @@
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5px;
+  flex-wrap: wrap;
+}
+.filters .search {
+  border: 1px solid rgb(255, 0, 225);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.filters .dropdown .dropdownMenu button {
+  background-color: white;
+  border: 3px solid rgb(255, 0, 225);
+  color: rgb(255, 0, 225);
+  width: 200px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: large;
+  font-weight: 500;
+  z-index: 999;
+  padding: 5px 0;
+}
+.filters .dropdown .dropdownMenu button:focus {
+  z-index: 999;
+}
+.filters .dropdown .dropdownMenu button:hover {
+  background-color: rgb(255, 0, 225);
+  color: white;
+  border-color: white;
+}
+.filters .dropdown .dropdownMenu button:focus {
+  background-color: rgb(255, 0, 225);
+  color: white;
+  border-color: white;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.filters .dropdown .dropdownMenu button:focus + .menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+.filters .dropdown .dropdownMenu .menu {
+  position: absolute;
+  background-color: white;
+  border: 3px solid rgb(255, 0, 225);
+  border-top: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+.filters .dropdown .dropdownMenu .menu li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.filters .dropdown .dropdownMenu .menu li:hover {
+  background-color: rgb(255, 0, 225);
+  color: white;
+}
+.filters .dropdown .dropdownMenu .menu .link {
+  color: rgb(255, 0, 225);
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filters .dropdown .dropdownMenu .menu .link:hover {
+  color: white;
+}/*# sourceMappingURL=Filters.css.map */

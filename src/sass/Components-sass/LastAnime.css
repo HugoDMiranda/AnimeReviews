@@ -1,0 +1,26 @@
+.last {
+  list-style: none;
+  background-color: white;
+  color: rgb(255, 0, 225);
+  margin: 5px;
+  border-radius: 25px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  flex-wrap: wrap;
+}
+.last p {
+  margin: 0;
+}
+.last .last-name {
+  flex: 4;
+}
+.last .last-type {
+  background-color: rgb(255, 0, 225);
+  color: white;
+  border-radius: 10px;
+  padding: 2px 7px;
+  flex: 1;
+}/*# sourceMappingURL=LastAnime.css.map */

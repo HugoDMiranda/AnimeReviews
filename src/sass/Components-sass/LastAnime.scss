@@ -1,0 +1,31 @@
+@import "../Varibles/Varibles.scss";
+
+.last {
+  list-style: none;
+  background-color: white;
+  color: $pink;
+  margin: 5px;
+  border-radius: 25px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  flex-wrap: wrap;
+
+  p {
+    margin: 0;
+  }
+
+  .last-name {
+    flex: 4;
+  }
+
+  .last-type {
+    background-color: $pink;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 7px;
+    flex: 1;
+  }
+}

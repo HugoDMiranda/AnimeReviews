@@ -1,0 +1,17 @@
+@import "../sass/Varibles/Varibles.scss";
+
+.form-container,
+.login-form {
+  @include login-registerForm();
+  .errorMessage {
+    @include errorMessage();
+  }
+}
+
+.form-container {
+  @include login-registerContainer();
+}
+
+.register {
+  @include login-registerButton();
+}

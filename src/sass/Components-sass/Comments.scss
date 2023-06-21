@@ -1,0 +1,93 @@
+@import "../Varibles/Varibles.scss";
+
+.comment-container {
+  .user-comment {
+    float: right;
+    background-color: $pink;
+    box-shadow: inset 14px 14px 22px 14px rgba(0, 0, 0, 0.1);
+    @include comment();
+    color: white;
+
+    textarea {
+      width: 90%;
+      padding-left: 10px;
+      max-height: 150px;
+    }
+
+    #newComment {
+      border-radius: 10px;
+    }
+
+    span {
+      @include errorMessage();
+      margin-top: 5px;
+    }
+
+    .ratio-name {
+      background-color: white;
+      color: $pink;
+      border: 1px solid $pink;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      input {
+        border-radius: 20px;
+        padding-left: 8px;
+        max-width: 100px;
+      }
+    }
+
+    .comment-text {
+      display: flex;
+      width: 90%;
+      align-items: flex-start;
+    }
+
+    .comment-buttons {
+      width: 90%;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      @include comment-buttons(white, $pink);
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .other-comment {
+    @include comment();
+    background: #ffffff;
+    box-shadow: 14px 14px 22px 14px rgba(0, 0, 0, 0.1);
+    color: $pink;
+
+    .comment-buttons {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      @include comment-buttons(white, $pink);
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .ratio-name {
+      background-color: $pink;
+      color: white;
+      border: 1px solid white;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 5px 20px;
+    }
+  }
+}

@@ -1,0 +1,228 @@
+//Breakpoints
+$breakpoints: (
+  "lg": 1100px,
+  "sm": 850px,
+);
+
+//COLOR
+$pink: rgb(255, 0, 225);
+$backgroundColor: linear-gradient(180deg, $pink, rgba(255, 52, 52, 0) 80%);
+
+//GlassEffect
+@mixin glassEffect($padding, $margin) {
+  padding: $padding;
+  border: 1px solid rgba(31, 38, 135, 0.18);
+  border-radius: 10px;
+  margin: $margin;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+}
+
+//Error Message
+@mixin errorMessage {
+  background-color: rgb(255, 70, 70);
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  padding: 0px 5px;
+  margin-bottom: 5px;
+}
+
+//Login-Register
+@mixin login-registerForm {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin login-registerContainer {
+  @include glassEffect(30px, 5px);
+
+  label {
+    text-align: left;
+    padding: 2px 0;
+  }
+
+  input {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  button {
+    border: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: $pink;
+    margin-bottom: 25px;
+  }
+}
+
+@mixin login-registerButton {
+  background-color: none;
+  color: $pink;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+//Media
+
+@mixin lg {
+  @media (max-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+//TEXT
+@mixin info-text {
+  color: $pink;
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid $pink;
+}
+
+//New/AnimePage
+
+@mixin pageContainer {
+  @include glassEffect(20px, 5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+
+@mixin inf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 4;
+
+  h1 {
+    color: $pink;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: white;
+    background-color: $pink;
+    margin: 0;
+    padding: 2px 15px;
+    border-radius: 25px;
+  }
+}
+
+@mixin ratio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+  width: 95%;
+  border-radius: 25px;
+  margin: 10px 30px;
+  padding: 5px;
+}
+
+@mixin data {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px;
+
+  h4 {
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: $pink;
+    color: white;
+    padding: 4px 15px;
+  }
+}
+
+@mixin animeImg {
+  border: 5px solid white;
+  border-radius: 10px;
+  max-width: 290px;
+  margin: 5px;
+  flex: 1;
+}
+
+@mixin synopsis {
+  background-color: white;
+  color: $pink;
+  margin: 10px 30px;
+  text-align: justify;
+  padding: 20px;
+  border: 1px solid $pink;
+  border-radius: 20px;
+}
+
+//Comment
+@mixin comment-buttons($bgcolor, $color) {
+  button {
+    border: 1px solid $color;
+    background-color: $bgcolor;
+    display: flex;
+    color: $color;
+    border-radius: 15px;
+    padding: 5px;
+    transition: 0.5s;
+    padding: 5px 10px;
+    margin: 5px;
+
+    &:hover {
+      border-color: $bgcolor;
+      background-color: $color;
+      color: $bgcolor;
+    }
+  }
+}
+
+@mixin comment {
+  border-radius: 30px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  flex-direction: column;
+
+  p {
+    text-align: justify;
+  }
+
+  .ratio-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+    h5 {
+      width: auto;
+      text-align: center;
+      margin: 0px;
+    }
+
+    p {
+      width: auto;
+      text-align: center;
+      margin: 0px;
+    }
+  }
+}

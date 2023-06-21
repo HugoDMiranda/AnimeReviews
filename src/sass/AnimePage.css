@@ -1,0 +1,232 @@
+.animeReview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.animePage-container {
+  padding: 20px;
+  border: 1px solid rgba(31, 38, 135, 0.18);
+  border-radius: 10px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+  flex-direction: row;
+  width: 100%;
+}
+.animePage-container .newAnimeImgText {
+  color: rgb(255, 0, 225);
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 0, 225);
+  padding: 5px;
+}
+.animePage-container .newAnimeInf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 4;
+}
+.animePage-container .newAnimeInf h1 {
+  color: rgb(255, 0, 225);
+  margin: 0;
+  font-weight: 700;
+}
+.animePage-container .newAnimeInf h2 {
+  color: white;
+  background-color: rgb(255, 0, 225);
+  margin: 0;
+  padding: 2px 15px;
+  border-radius: 25px;
+}
+.animePage-container .newAnimeInf .update-error {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.animePage-container .newAnimeInf .update-error span {
+  background-color: rgb(255, 70, 70);
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  padding: 0px 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+.animePage-container .newAnimeInf input {
+  border: 1px solid rgb(255, 0, 225);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.animePage-container .newAnimeInf .newAnime-name-ratio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+  width: 95%;
+  border-radius: 25px;
+  margin: 10px 30px;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.animePage-container .newAnimeInf .newAnimeData {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.animePage-container .newAnimeInf .newAnimeData h4 {
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: rgb(255, 0, 225);
+  color: white;
+  padding: 4px 15px;
+}
+.animePage-container .newAnimeInf .newAnimeData select {
+  border: 1px solid rgb(255, 0, 225);
+  padding: 7px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.animePage-container .newAnimeInf .newAnimeData h4 {
+  width: 200px;
+}
+.animePage-container .newAnimeInf button {
+  width: 95%;
+  border: 1px solid white;
+  background-color: rgb(255, 0, 225);
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  transition: 0.5s;
+}
+.animePage-container .newAnimeInf button:hover {
+  border-color: rgb(255, 0, 225);
+  background-color: white;
+  color: rgb(255, 0, 225);
+}
+.animePage-container .newAnimeImg {
+  border: 5px solid white;
+  border-radius: 10px;
+  max-width: 290px;
+  margin: 5px;
+  flex: 1;
+}
+.animePage-container .newAnimeSynopsis {
+  margin: 10px;
+  width: 95%;
+  height: 200px;
+}
+.animePage-container .animeInf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 4;
+}
+.animePage-container .animeInf h1 {
+  color: rgb(255, 0, 225);
+  margin: 0;
+  font-weight: 700;
+}
+.animePage-container .animeInf h2 {
+  color: white;
+  background-color: rgb(255, 0, 225);
+  margin: 0;
+  padding: 2px 15px;
+  border-radius: 25px;
+}
+.animePage-container .animeInf textarea {
+  width: 100%;
+  height: 100%;
+  margin: 5px;
+}
+.animePage-container .animeInf .anime-name-ratio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+  width: 95%;
+  border-radius: 25px;
+  margin: 10px 30px;
+  padding: 5px;
+}
+.animePage-container .animeInf .animeData {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+.animePage-container .animeInf .animeData h4 {
+  border: 2px solid white;
+  border-radius: 25px;
+  background-color: rgb(255, 0, 225);
+  color: white;
+  padding: 4px 15px;
+}
+.animePage-container .animeInf .animeData input {
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  padding-left: 10px;
+}
+.animePage-container .animeImg {
+  width: 270px;
+  height: 400px;
+  border: 5px solid white;
+  border-radius: 10px;
+  max-width: 290px;
+  margin: 5px;
+  flex: 1;
+}
+.animePage-container .animeSynopsis {
+  background-color: white;
+  color: rgb(255, 0, 225);
+  margin: 10px 30px;
+  text-align: justify;
+  padding: 20px;
+  border: 1px solid rgb(255, 0, 225);
+  border-radius: 20px;
+}
+.animePage-container .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.animePage-container .button-container button {
+  border: 1px solid white;
+  background-color: rgb(255, 0, 225);
+  display: flex;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  transition: 0.5s;
+  padding: 5px 10px;
+  margin: 5px;
+}
+.animePage-container .button-container button:hover {
+  border-color: rgb(255, 0, 225);
+  background-color: white;
+  color: rgb(255, 0, 225);
+}/*# sourceMappingURL=AnimePage.css.map */

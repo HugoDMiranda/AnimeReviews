@@ -1,0 +1,90 @@
+.reviews-container {
+  padding: 20px;
+  border: 1px solid rgba(31, 38, 135, 0.18);
+  border-radius: 10px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  width: 80%;
+}
+.reviews-container .form-reviews .errorMessage {
+  background-color: rgb(255, 70, 70);
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  padding: 0px 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+.reviews-container hr {
+  border: 1px solid black;
+  background-color: black;
+}
+.reviews-container h2 {
+  color: rgb(255, 0, 225);
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 0, 225);
+  padding-bottom: 3px;
+}
+.reviews-container .commentLink {
+  color: rgb(255, 0, 225);
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 0, 225);
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.reviews-container .commentLink:hover {
+  color: white;
+  background-color: rgb(255, 0, 225);
+}
+.reviews-container .commentText {
+  width: 100%;
+  height: 200px;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 0, 225);
+}
+.reviews-container .ratio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reviews-container .ratio-container h4 {
+  color: rgb(255, 0, 225);
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid rgb(255, 0, 225);
+  margin-top: 20px;
+}
+.reviews-container .ratio-container input {
+  border: 1px solid rgb(255, 0, 225);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.reviews-container .ratio-container button {
+  border: 1px solid white;
+  background-color: rgb(255, 0, 225);
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  transition: 0.5s;
+  padding: 5px 10px;
+  margin: 5px;
+  width: 100%;
+}
+.reviews-container .ratio-container button:hover {
+  border-color: rgb(255, 0, 225);
+  background-color: white;
+  color: rgb(255, 0, 225);
+}/*# sourceMappingURL=Reviews.css.map */

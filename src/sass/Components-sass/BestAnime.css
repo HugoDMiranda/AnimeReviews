@@ -1,0 +1,14 @@
+.bestAnime {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  flex-direction: row;
+  max-width: 270px;
+}
+
+.bestAnime img {
+  max-width: 200px;
+  margin: 5px;
+  border: 2px solid yellow;
+}/*# sourceMappingURL=BestAnime.css.map */

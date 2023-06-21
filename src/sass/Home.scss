@@ -1,0 +1,92 @@
+@import "../sass/Varibles/Varibles.scss";
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100vw;
+
+  .info-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    padding: 15px;
+    flex: 9;
+    width: 100%;
+    min-height: 100vh;
+    @include sm {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .last-container {
+      flex: 2;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+      @include glassEffect(20px, 5px);
+      @include lg {
+        flex: 4;
+      }
+
+      .last-animes {
+        width: 100%;
+        padding: 0;
+      }
+
+      .last-text {
+        @include info-text;
+      }
+    }
+
+    .animes-container {
+      flex: 8;
+      flex-direction: column;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      @include glassEffect(20px, 5px);
+
+      .animes-text {
+        @include info-text();
+      }
+
+      .animes-list-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      @include lg {
+        flex: 4;
+      }
+    }
+
+    .best-container {
+      flex: 2;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      @include glassEffect(20px, 5px);
+      @include lg {
+        flex: 3;
+      }
+
+      .best-text {
+        @include info-text;
+      }
+    }
+  }
+}

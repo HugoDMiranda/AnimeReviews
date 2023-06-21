@@ -1,0 +1,82 @@
+@import "../Varibles/Varibles.scss";
+
+.reviews-container {
+  @include glassEffect(20px, 5px);
+  width: 80%;
+
+  .form-reviews {
+    .errorMessage {
+      @include errorMessage();
+      display: block;
+    }
+  }
+
+  hr {
+    border: 1px solid black;
+
+    background-color: black;
+  }
+
+  h2 {
+    @include info-text();
+    padding-bottom: 3px;
+  }
+
+  .commentLink {
+    @include info-text();
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+
+    &:hover {
+      color: white;
+      background-color: $pink;
+    }
+  }
+
+  .commentText {
+    width: 100%;
+    height: 200px;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid $pink;
+  }
+
+  .ratio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h4 {
+      @include info-text();
+      margin-top: 20px;
+    }
+
+    input {
+      border: 1px solid $pink;
+      padding: 5px;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    button {
+      border: 1px solid white;
+      background-color: $pink;
+      color: white;
+      border-radius: 15px;
+      padding: 5px;
+      transition: 0.5s;
+      padding: 5px 10px;
+      margin: 5px;
+      width: 100%;
+
+      &:hover {
+        border-color: $pink;
+        background-color: white;
+        color: $pink;
+      }
+    }
+  }
+}

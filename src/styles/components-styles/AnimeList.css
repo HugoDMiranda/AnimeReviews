@@ -1,0 +1,13 @@
+.AnimeList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white;
+  margin: 10px;
+  flex-direction: row;
+  max-width: 270px;
+}
+
+.AnimeList img {
+  max-width: 250px;
+}

@@ -1,0 +1,27 @@
+.letras-container {
+  width: 90%;
+  display: flex;
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.letras {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  width: 90%;
+  text-decoration: none;
+  margin: 10px;
+  list-style: none;
+}
+
+.letras li {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 0, 204);
+  font-weight: 400;
+}
