@@ -12,26 +12,23 @@ function NewAnime() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    Axios.get(
-      "https://server-animereviews-production.up.railway.app/api/reviews"
-    ).then((response) => {
-      setAnimeReviewsList(response.data);
-    });
+    Axios.get("https://server-anime-reviews.vercel.app/api/reviews").then(
+      (response) => {
+        setAnimeReviewsList(response.data);
+      }
+    );
   }, [animeReviewsList]);
 
   const submitReview = (e) => {
-    Axios.post(
-      "https://server-animereviews-production.up.railway.app/api/reviews",
-      {
-        animeName: e.animeName,
-        animeSynopsis: e.animeSynopsis,
-        animeStatus: e.animeStatus,
-        animeYear: e.animeYear,
-        animeType: e.animeType,
-        animeImg: e.animeImg,
-        animeCategory: e.animeCategory,
-      }
-    );
+    Axios.post("https://server-anime-reviews.vercel.app/api/reviews", {
+      animeName: e.animeName,
+      animeSynopsis: e.animeSynopsis,
+      animeStatus: e.animeStatus,
+      animeYear: e.animeYear,
+      animeType: e.animeType,
+      animeImg: e.animeImg,
+      animeCategory: e.animeCategory,
+    });
     setAnimeReviewsList([
       ...animeReviewsList,
       {

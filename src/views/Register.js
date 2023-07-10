@@ -18,7 +18,7 @@ function Register() {
     // e.preventDefault();
     try {
       await Axios.post(
-        "https://server-animereviews-production.up.railway.app/api/auth/register",
+        "https://server-anime-reviews.vercel.app/api/auth/register",
         {
           username: e.name,
           userpassword: e.password,

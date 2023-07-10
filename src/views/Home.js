@@ -32,12 +32,12 @@ function Home() {
     const fetchData = async () => {
       try {
         const rescom = await Axios.get(
-          `https://server-animereviews-production.up.railway.app/api/comments`
+          `https://server-anime-reviews.vercel.app/api/comments`
         );
         setComentarios(rescom.data);
 
         const res = await Axios.get(
-          `https://server-animereviews-production.up.railway.app/api/reviews${category}`
+          `https://server-anime-reviews.vercel.app/api/reviews${category}`
         );
         setAnimeReviewsList(res.data);
       } catch (err) {

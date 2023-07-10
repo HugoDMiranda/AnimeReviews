@@ -13,24 +13,21 @@ function Reviews({ animeComments, animePageId }) {
   const [animeCommentsList, setAnimeCommentsList] = useState([]);
 
   useEffect(() => {
-    Axios.get(
-      "https://server-animereviews-production.up.railway.app/api/comments"
-    ).then((response) => {
-      setAnimeCommentsList(response.data);
-    });
+    Axios.get("https://server-anime-reviews.vercel.app/api/comments").then(
+      (response) => {
+        setAnimeCommentsList(response.data);
+      }
+    );
   }, [animeCommentsList]);
 
   const submitComment = async (e) => {
     try {
-      await Axios.post(
-        "https://server-animereviews-production.up.railway.app/api/comments",
-        {
-          commentText: e.commentText,
-          ratio: e.ratio,
-          userId: currentUser.id,
-          animeId: animePageId,
-        }
-      );
+      await Axios.post("https://server-anime-reviews.vercel.app/api/comments", {
+        commentText: e.commentText,
+        ratio: e.ratio,
+        userId: currentUser.id,
+        animeId: animePageId,
+      });
       setAnimeCommentsList([
         ...animeCommentsList,
         {

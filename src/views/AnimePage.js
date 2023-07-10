@@ -19,14 +19,14 @@ function AnimePage() {
   const [updateAnime, setUpdateAnime] = useState(false);
 
   useEffect(() => {
-    Axios.get(
-      `https://server-animereviews-production.up.railway.app/api/reviews/${id}`
-    ).then((response) => {
-      setAnimePage(response.data[0]);
-    });
+    Axios.get(`https://server-anime-reviews.vercel.app/api/reviews/${id}`).then(
+      (response) => {
+        setAnimePage(response.data[0]);
+      }
+    );
 
     Axios.get(
-      `https://server-animereviews-production.up.railway.app/api/comments/${id}`
+      `https://server-anime-reviews.vercel.app/api/comments/${id}`
     ).then((response) => {
       setAnimeComments(response.data);
     });
@@ -51,24 +51,19 @@ function AnimePage() {
   }, [id, animeComments]);
 
   const deleteReview = (id) => {
-    Axios.delete(
-      `https://server-animereviews-production.up.railway.app/api/reviews/${id}`
-    );
+    Axios.delete(`https://server-anime-reviews.vercel.app/api/reviews/${id}`);
   };
 
   const updateReview = (e) => {
-    Axios.put(
-      `https://server-animereviews-production.up.railway.app/api/reviews/${id}`,
-      {
-        id: id,
-        newSynopsis: e.newSynopsis,
-        newName: e.newName,
-        newType: e.newType,
-        newYear: e.newYear,
-        newStatus: e.newStatus,
-        newImg: e.newImg,
-      }
-    );
+    Axios.put(`https://server-anime-reviews.vercel.app/api/reviews/${id}`, {
+      id: id,
+      newSynopsis: e.newSynopsis,
+      newName: e.newName,
+      newType: e.newType,
+      newYear: e.newYear,
+      newStatus: e.newStatus,
+      newImg: e.newImg,
+    });
     setUpdateAnime(!updateAnime);
   };
 

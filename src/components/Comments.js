@@ -15,22 +15,20 @@ function Comments({ animeComments }) {
 
   useEffect(() => {
     Axios.get(
-      `https://server-animereviews-production.up.railway.app/api/comments/users`
+      `https://server-anime-reviews.vercel.app/api/comments/users`
     ).then((response) => {
       setUsers(response.data);
     });
   }, []);
 
   const deleteComment = (id) => {
-    Axios.delete(
-      `https://server-animereviews-production.up.railway.app/api/comments/${id}`
-    );
+    Axios.delete(`https://server-anime-reviews.vercel.app/api/comments/${id}`);
   };
 
   const updateComment = async (e) => {
     try {
       await Axios.put(
-        `https://server-animereviews-production.up.railway.app/api/comments/${id}`,
+        `https://server-anime-reviews.vercel.app/api/comments/${id}`,
         {
           id: id,
           newComment: e.newComment,
