@@ -34,7 +34,7 @@ function AnimePage() {
     let ratio = [];
 
     animeComments.map((comment) => {
-      return ratio.push(comment.ratio);
+      return ratio.push(Number(comment.ratio));
     });
 
     let suma = (ratio) => {
@@ -48,7 +48,8 @@ function AnimePage() {
     let promedio = (suma(ratio) / animeComments.length).toFixed(1);
 
     setAnimeRatio(promedio);
-  }, [id, animeComments]);
+    console.log(suma(ratio));
+  }, [id, animeComments, animeRatio]);
 
   const deleteReview = (id) => {
     Axios.delete(`https://server-anime-reviews.vercel.app/api/reviews/${id}`);
@@ -216,7 +217,7 @@ function AnimePage() {
             ) : null}
             <div className="anime-name-ratio">
               <h1>{animePage.animeName}</h1>
-              <h2>{animeRatio}</h2>
+              <h2>{isNaN(animeRatio) ? "--" : animeRatio}</h2>
             </div>
             <div className="animeData">
               <div>

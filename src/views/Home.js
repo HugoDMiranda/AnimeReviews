@@ -52,7 +52,7 @@ function Home() {
 
     comentarios.map((comment) => {
       if (id === comment.animeId) {
-        return ratio.push(comment.ratio);
+        return ratio.push(Number(comment.ratio));
       } else {
         return null;
       }

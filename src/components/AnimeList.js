@@ -8,7 +8,7 @@ function AnimeList({ Img, animeName, Ratio, Synopsis, id }) {
       <img src={Img} alt={animeName} className="card-img-top img-fluid" />
       <div className="AnimeText">
         <h1 className="animeName">{animeName}</h1>
-        <h1 className="animeRatio">{Ratio}</h1>
+        <h1 className="animeRatio">{isNaN(Ratio) ? "--" : Ratio}</h1>
         <p className="synopsis">{Synopsis}</p>
       </div>
     </Link>
