@@ -71,77 +71,59 @@ function NewAnime() {
       validationSchema={animeSchema}
     >
       <Form className="newAnimePage-container">
-        <div className="newAnimeImg-container">
-          <h1 className="newAnimeImgText">Anime Img</h1>
+        <div className="newAnimePage-container-info">
+          <h3>Anime Name:</h3>
+          <Field
+            placeholder="Anime Name..."
+            autoComplete="off"
+            name="animeName"
+            type="text"
+          />
+          <h3 className="newAnimeImgText">Anime Img: </h3>
           <Field
             className="newAnimeImg"
             name="animeImg"
             placeholder="Img URL..."
             type="url"
           />
-        </div>
 
-        <div className="newAnimeInf">
-          <div className="newAnime-name-ratio">
-            <h1>Anime Name:</h1>
-            <Field
-              placeholder="Anime Name..."
-              autoComplete="off"
-              name="animeName"
-              type="text"
-            />
-          </div>
-          <div className="newAnimeData">
-            <div>
-              <h4>Type</h4>
-              <Field placeholder="Type" name="animeType" component="select">
-                {filters[1].map((status) => {
-                  return (
-                    <option value={status} key={status}>
-                      {status}
-                    </option>
-                  );
-                })}
-              </Field>
-            </div>
-            <div>
-              <h4>Year</h4>
-              <Field placeholder="Year..." name="animeYear" type="number" />
-            </div>
-            <div>
-              <h4>Status</h4>
-              <Field
-                placeholder="Status..."
-                name="animeStatus"
-                component="select"
-              >
-                {filters[2].map((status) => {
-                  return (
-                    <option value={status} key={status}>
-                      {status}
-                    </option>
-                  );
-                })}
-              </Field>
-            </div>
-            <div>
-              <h4>Category</h4>
-              <Field
-                placeholder="Category"
-                name="animeCategory"
-                component="select"
-              >
-                {filters[0].map((category) => {
-                  return (
-                    <option value={category} key={category}>
-                      {category}
-                    </option>
-                  );
-                })}
-              </Field>
-            </div>
-          </div>
-          <h4>Synopsis</h4>
+          <h3>Type: </h3>
+          <Field placeholder="Type" name="animeType" component="select">
+            {filters[1].map((status) => {
+              return (
+                <option value={status} key={status}>
+                  {status}
+                </option>
+              );
+            })}
+          </Field>
+
+          <h3>Year: </h3>
+          <Field placeholder="Year..." name="animeYear" type="number" />
+
+          <h3>Status: </h3>
+          <Field placeholder="Status..." name="animeStatus" component="select">
+            {filters[2].map((status) => {
+              return (
+                <option value={status} key={status}>
+                  {status}
+                </option>
+              );
+            })}
+          </Field>
+
+          <h3>Category: </h3>
+          <Field placeholder="Category" name="animeCategory" component="select">
+            {filters[0].map((category) => {
+              return (
+                <option value={category} key={category}>
+                  {category}
+                </option>
+              );
+            })}
+          </Field>
+
+          <h3>Synopsis: </h3>
           <Field
             className="newAnimeSynopsis"
             name="animeSynopsis"
@@ -149,42 +131,46 @@ function NewAnime() {
             as="textarea"
             type="textarea"
           />
-          <button type="submit">Add anime</button>
-          <ErrorMessage
-            name="animeImg"
-            component="span"
-            className="errorMessage"
-          />
-          <ErrorMessage
-            name="animeName"
-            component="span"
-            className="errorMessage"
-          />
-          <ErrorMessage
-            name="animeType"
-            component="span"
-            className="errorMessage"
-          />
-          <ErrorMessage
-            name="animeYear"
-            component="span"
-            className="errorMessage"
-          />
-          <ErrorMessage
-            name="animeStatus"
-            component="span"
-            className="errorMessage"
-          />
-          <ErrorMessage
-            name="animeSynopsis"
-            component="span"
-            className="errorMessage"
-          />
-          <ErrorMessage
-            name="animeCategory"
-            component="span"
-            className="errorMessage"
-          />
+          <div className="newAnimePage-container-info-button">
+            <button type="submit">Add anime</button>
+          </div>
+          <div className="newAnimePage-container-info-error">
+            <ErrorMessage
+              name="animeImg"
+              component="span"
+              className="errorMessage"
+            />
+            <ErrorMessage
+              name="animeName"
+              component="span"
+              className="errorMessage"
+            />
+            <ErrorMessage
+              name="animeType"
+              component="span"
+              className="errorMessage"
+            />
+            <ErrorMessage
+              name="animeYear"
+              component="span"
+              className="errorMessage"
+            />
+            <ErrorMessage
+              name="animeStatus"
+              component="span"
+              className="errorMessage"
+            />
+            <ErrorMessage
+              name="animeSynopsis"
+              component="span"
+              className="errorMessage"
+            />
+            <ErrorMessage
+              name="animeCategory"
+              component="span"
+              className="errorMessage"
+            />
+          </div>
         </div>
       </Form>
     </Formik>

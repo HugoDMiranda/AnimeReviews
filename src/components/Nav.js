@@ -11,7 +11,7 @@ function Nav() {
     <nav class="navbar fixed-top bg-body-tertiary">
       <div class="container-fluid con-navbar">
         <div className="dropdown">
-          <button class="navbar-brand">
+          <button className="navbar-brand">
             <FaBars />
           </button>
           <div className="navbar-info">
@@ -26,17 +26,27 @@ function Nav() {
                   Register
                 </Link>
               </li>
-              <li>
-                {currentUser ? (
-                  <button className="navbar-button" onClick={logout}>
-                    Logout
-                  </button>
-                ) : (
+
+              {currentUser ? (
+                <>
+                  <li>
+                    <Link className="navbar-link" to="/" onClick={logout}>
+                      Logout
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="navbar-link" to="/User">
+                      User
+                    </Link>
+                  </li>
+                </>
+              ) : (
+                <li>
                   <Link className="navbar-link" to="/Login">
                     Login
                   </Link>
-                )}
-              </li>
+                </li>
+              )}
             </ul>
             <div>
               {currentUser ? (

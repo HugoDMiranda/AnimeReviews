@@ -1,0 +1,60 @@
+.form-container,
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .errorMessage,
+.register-form .errorMessage {
+  background-color: rgb(255, 70, 70);
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  padding: 0px 5px;
+  margin-bottom: 5px;
+}
+.form-container .successMessage,
+.register-form .successMessage {
+  background-color: rgb(65, 254, 65);
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  padding: 0px 5px;
+  margin-bottom: 5px;
+}
+
+.form-container {
+  padding: 30px;
+  border: 1px solid rgba(31, 38, 135, 0.18);
+  border-radius: 10px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.form-container label {
+  text-align: left;
+  padding: 2px 0;
+}
+.form-container input {
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.form-container button {
+  border: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: rgb(255, 0, 225);
+  margin-bottom: 25px;
+}
+
+.login {
+  background-color: none;
+  color: rgb(255, 0, 225);
+  text-decoration: underline;
+  margin-top: 20px;
+}/*# sourceMappingURL=User.css.map */

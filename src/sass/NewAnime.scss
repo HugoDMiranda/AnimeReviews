@@ -2,18 +2,20 @@
 
 .newAnimePage-container {
   @include pageContainer();
+  width: 100%;
 
-  .newAnimeImgText {
-    @include info-text;
-    padding: 5px;
-  }
+  &-info {
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 4;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 10px;
 
-  .newAnimeInf {
-    @include inf();
-
-    .errorMessage {
-      @include errorMessage();
-      width: 100%;
+    h3 {
+      text-decoration: underline;
     }
 
     input,
@@ -22,51 +24,36 @@
       padding: 5px;
       border-radius: 5px;
       margin: 5px;
+      width: 100%;
     }
 
-    .newAnime-name-ratio {
-      @include ratio();
+    &-error {
+      margin: 5px 0;
+      display: flex;
       flex-wrap: wrap;
-    }
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
 
-    .newAnimeData {
-      @include data();
-      flex-wrap: wrap;
+      span {
+        @include errorMessage();
+        display: block;
+        width: 100%;
+      }
     }
-
-    button {
-      width: 95%;
-      border: 1px solid white;
-      background-color: $pink;
-      color: white;
-      border-radius: 15px;
-      padding: 5px;
-      transition: 0.5s;
-      margin-bottom: 20px;
-    }
-
-    button:hover {
-      border-color: $pink;
-      background-color: white;
-      color: $pink;
-    }
-
-    h4 {
-      @include info-text();
-      min-width: 200px;
-    }
-  }
-
-  .newAnimeImg-container {
-    margin: 10px;
-    .newAnimeImg {
-      @include animeImg();
+    &-button {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @include comment-buttons($pink, white);
     }
   }
 
   .newAnimeSynopsis {
-    margin: 10px;
+    padding: 0;
+    margin: 10px 0;
     width: 100%;
-    height: 200px;
+    height: 100px;
   }
 }

@@ -48,7 +48,6 @@ function AnimePage() {
     let promedio = (suma(ratio) / animeComments.length).toFixed(1);
 
     setAnimeRatio(promedio);
-    console.log(suma(ratio));
   }, [id, animeComments, animeRatio]);
 
   const deleteReview = (id) => {
@@ -97,68 +96,52 @@ function AnimePage() {
           validationSchema={animeSchema}
         >
           <Form className="animePage-container">
-            {currentUser?.admin === 1 ? (
-              <div className="button-container">
-                <button type="submit">
-                  <AiOutlineCheck />
-                </button>
-                <button onClick={() => setUpdateAnime(!updateAnime)}>
-                  <RxCross1 />
-                </button>
-              </div>
-            ) : null}
-            <div>
-              <h1 className="newAnimeImgText">New Img</h1>
-              <Field
-                className="newAnimeImg"
-                name="newImg"
-                placeholder=" New Img URL..."
-                type="url"
-              />
-            </div>
+            <div className="newAnimeInf AnimeInf">
+              {currentUser?.admin === 1 ? (
+                <div className="button-container">
+                  <button type="submit">
+                    <AiOutlineCheck />
+                  </button>
+                  <button onClick={() => setUpdateAnime(!updateAnime)}>
+                    <RxCross1 />
+                  </button>
+                </div>
+              ) : null}
 
-            <div className="newAnimeInf">
-              <div className="newAnime-name-ratio">
-                <h1>New name:</h1>
-                <Field placeholder="New name..." name="newName" type="text" />
-              </div>
-              <div className="newAnimeData">
-                <div>
-                  <h4>New type:</h4>
-                  <Field
-                    placeholder="New type"
-                    name="newType"
-                    type="text"
-                    component="select"
-                  >
-                    {filters[1].map((type) => {
-                      return <option value={type}>{type}</option>;
-                    })}
-                  </Field>
-                </div>
-                <div>
-                  <h4>New year:</h4>
-                  <Field
-                    placeholder="New year..."
-                    name="newYear"
-                    type="number"
-                  />
-                </div>
-                <div>
-                  <h4>New status:</h4>
-                  <Field
-                    placeholder="New status..."
-                    name="newStatus"
-                    type="text"
-                    component="select"
-                  >
-                    {filters[2].map((status) => {
-                      return <option value={status}>{status}</option>;
-                    })}
-                  </Field>
-                </div>
-              </div>
-              <h2>New Synopsis:</h2>
+              <h3>New Img:</h3>
+              <Field name="newImg" placeholder=" New Img URL..." type="url" />
+
+              <h3>New name:</h3>
+              <Field placeholder="New name..." name="newName" type="text" />
+
+              <h3>New type:</h3>
+              <Field
+                placeholder="New type"
+                name="newType"
+                type="text"
+                component="select"
+              >
+                {filters[1].map((type) => {
+                  return <option value={type}>{type}</option>;
+                })}
+              </Field>
+
+              <h3>New year:</h3>
+              <Field placeholder="New year..." name="newYear" type="number" />
+
+              <h3>New status:</h3>
+              <Field
+                placeholder="New status..."
+                name="newStatus"
+                type="text"
+                component="select"
+              >
+                {filters[2].map((status) => {
+                  return <option value={status}>{status}</option>;
+                })}
+              </Field>
+
+              <h3>New Synopsis:</h3>
               <Field
                 className="newAnimeSynopsis"
                 name="newSynopsis"
