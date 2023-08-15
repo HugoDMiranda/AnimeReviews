@@ -8,8 +8,6 @@ import * as yup from "yup";
 import { Formik, Form, Field } from "formik";
 
 function Login() {
-  // const [passLogin, setPassLogin] = useState("");
-  // const [nameLogin, setNameLogin] = useState("");
   const [err, setErr] = useState(null);
 
   const navigate = useNavigate();
@@ -19,12 +17,7 @@ function Login() {
   Axios.defaults.withCredentials = true;
 
   const handleSubmit = async (e) => {
-    // e.preventDefault();
     try {
-      // await Axios.post("http://localhost:3001/api/auth/login", {
-      //   username: nameLogin,
-      //   userpassword: passLogin,
-      // });
       await login(e.name, e.password);
       navigate("/");
     } catch (err) {
@@ -32,36 +25,6 @@ function Login() {
       console.log(err.response.data);
     }
   };
-
-  // const [nameLogin, setNameLogin] = useState("");
-  // const [passLogin, setPassLogin] = useState("");
-
-  // const [loginStatus, setLoginStatus] = useState("");
-
-  // Axios.defaults.withCredentials = true;
-
-  // const handleSubmitLogin = (e) => {
-  //   e.preventDefault();
-
-  //   Axios.post("http://localhost:3001/login", {
-  //     username: nameLogin,
-  //     userpassword: passLogin,
-  //   }).then((response) => {
-  //     console.log(response);
-  //     if (response.data.message) {
-  //       setLoginStatus(response.data.message);
-  //     } else {
-  //       setLoginStatus(response.data[0].name);
-  //     }
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   Axios.get("http://localhost:3001/login").then((response) => {
-  //     if (response.data.loggedIn === true)
-  //       setLoginStatus(response.data.user[0].name);
-  //   });
-  // }, []);
 
   const userSchema = yup.object().shape({
     name: yup.string().required(),
@@ -98,7 +61,9 @@ function Login() {
             id="password"
             name="password"
           />
-          <button type="submit">Log In</button>
+          <button type="submit" className="button-submit">
+            Log In
+          </button>
           {err && <span className="errorMessage">{err}</span>}
         </Form>
       </Formik>

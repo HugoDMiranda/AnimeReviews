@@ -6,6 +6,10 @@
 .register-form {
   @include login-registerForm();
 
+  .user-name {
+    @include info-text;
+  }
+
   .errorMessage {
     @include errorMessage();
   }

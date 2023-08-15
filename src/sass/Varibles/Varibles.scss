@@ -58,6 +58,13 @@ $backgroundColor: linear-gradient(180deg, $pink, rgba(255, 52, 52, 0) 80%);
     cursor: pointer;
     color: $pink;
     margin-bottom: 25px;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: $pink;
+      color: white;
+      padding: 22px;
+    }
   }
 }
 

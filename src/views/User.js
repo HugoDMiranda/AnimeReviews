@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
-import "../sass/Register.css";
+import "../sass/User.css";
 import Axios from "axios";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -48,14 +48,14 @@ function User() {
       <h2>Your account</h2>
       <div className="register-form">
         <label for="name">Your name:</label>
-        <h5>{currentUser.name}</h5>
+        <h2 className="user-name">{currentUser.name}</h2>
       </div>
       {!password ? (
         <>
           <button onClick={() => setPassword(true)}>
             Do you want to change your password?
           </button>
-          {res === "Tu contraseña fue cambiada con exito" && (
+          {res === "Your password was successfully changed" && (
             <span className="successMessage ">{res}</span>
           )}
         </>
@@ -109,8 +109,10 @@ function User() {
               component="span"
               className="errorMessage"
             />
-            <button type="submit">Change password</button>
-            {res !== "Tu contraseña fue cambiada con exito" && (
+            <button type="submit" className="button-submit">
+              Change password
+            </button>
+            {res !== "Your password was successfully changed" && (
               <span className="errorMessage">{res}</span>
             )}
           </Form>

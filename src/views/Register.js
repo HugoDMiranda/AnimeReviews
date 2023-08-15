@@ -88,7 +88,9 @@ function Register() {
             component="span"
             className="errorMessage"
           />
-          <button type="submit">Register</button>
+          <button type="submit" className="button-submit">
+            Register
+          </button>
           {err && <span className="errorMessage">{err}</span>}
         </Form>
       </Formik>

@@ -54,7 +54,6 @@
         color: black;
         display: flex;
         justify-content: center;
-        // align-items: center;
         flex-direction: column;
         list-style: none;
         padding: 10px;
@@ -77,45 +76,30 @@
           padding: 0;
           display: flex;
           align-items: center;
-          // justify-content: center;
           flex-direction: column;
           width: 100%;
 
           li {
-            font-weight: 500;
             margin: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            transition: 0.5s;
-
-            button {
-              // margin: 10px;
-              padding: 10px;
-              background-color: gray;
-              width: 200px;
-              border-radius: 25px;
-              transition: 0.5s;
-            }
-
-            button:hover {
-              scale: 1.05;
-            }
 
             .navbar-link {
               background-color: $pink;
               text-decoration: none;
-              color: black;
+              color: white;
               padding: 10px 10px;
               width: 200px;
               border-radius: 25px;
               transition: 0.5s;
-            }
 
-            .navbar-link:hover {
-              scale: 1.05;
-              color: white;
+              &:hover {
+                padding: 15px 15px;
+                color: $pink;
+                background-color: white;
+              }
             }
           }
         }
