@@ -193,7 +193,7 @@ function AnimePage() {
                 <button onClick={() => setUpdateAnime(!updateAnime)}>
                   <RxUpdate />
                 </button>
-                <button onClick={deleteReview}>
+                <button onClick={() => deleteReview()}>
                   <AiFillDelete />
                 </button>
               </div>
