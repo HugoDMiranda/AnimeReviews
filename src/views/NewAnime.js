@@ -5,7 +5,7 @@ import Axios from "axios";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import filters from "../data/filters.json";
-import Transition from "../components/Transition";
+import { motion } from "framer-motion";
 
 function NewAnime() {
   const [animeReviewsList, setAnimeReviewsList] = useState([]);
@@ -66,10 +66,13 @@ function NewAnime() {
   };
 
   return (
-    <Formik
+    <motion.Formik
       initialValues={initialValues}
       onSubmit={submitReview}
       validationSchema={animeSchema}
+      initial={{ opacity: 0, transition: { duration: 0.1 } }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
     >
       <Form className="newAnimePage-container">
         <div className="newAnimePage-container-info">
@@ -174,10 +177,8 @@ function NewAnime() {
           </div>
         </div>
       </Form>
-    </Formik>
+    </motion.Formik>
   );
 }
 
-const WrapperNewAnime = Transition(NewAnime);
-
-export default WrapperNewAnime;
+export default NewAnime;

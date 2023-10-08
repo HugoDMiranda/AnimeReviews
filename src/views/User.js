@@ -5,7 +5,7 @@ import Axios from "axios";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { AuthContext } from "../context/authContext";
-import Transition from "../components/Transition";
+import { motion } from "framer-motion";
 
 function User() {
   const [res, setRes] = useState(null);
@@ -45,7 +45,12 @@ function User() {
   };
 
   return (
-    <div className="form-container">
+    <motion.div
+      className="form-container"
+      initial={{ opacity: 0, transition: { duration: 0.1 } }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+    >
       <h2>Your account</h2>
       <div className="register-form">
         <label for="name">Your name:</label>
@@ -122,10 +127,8 @@ function User() {
       <Link className="register" to="/">
         Get back to home page.
       </Link>
-    </div>
+    </motion.div>
   );
 }
 
-const WrapperUser = Transition(User);
-
-export default WrapperUser;
+export default User;

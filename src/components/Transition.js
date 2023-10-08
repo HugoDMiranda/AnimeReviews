@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "../sass/Components-sass/Transition.css";
 
-const Transition = (OgComponent) => {
+const transition = (OgComponent) => {
   return () => {
     <>
       <OgComponent />
@@ -23,4 +23,4 @@ const Transition = (OgComponent) => {
   };
 };
 
-export default Transition;
+export default transition;

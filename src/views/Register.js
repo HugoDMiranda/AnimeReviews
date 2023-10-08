@@ -4,7 +4,7 @@ import "../sass/Register.css";
 import Axios from "axios";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import Transition from "../components/Transition";
+import { motion } from "framer-motion";
 
 function Register() {
   const [err, setErr] = useState(null);
@@ -46,7 +46,12 @@ function Register() {
   };
 
   return (
-    <div className="form-container">
+    <motion.div
+      className="form-container"
+      initial={{ opacity: 0, transition: { duration: 0.1 } }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+    >
       <h2>Register</h2>
       <Formik
         initialValues={initialValues}
@@ -99,10 +104,8 @@ function Register() {
       <Link className="register" to="/Login">
         Already have an account? Login here.
       </Link>
-    </div>
+    </motion.div>
   );
 }
 
-const WrapperRegister = Transition(Register);
-
-export default WrapperRegister;
+export default Register;

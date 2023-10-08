@@ -6,7 +6,7 @@ import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
 import * as yup from "yup";
 import { Formik, Form, Field } from "formik";
-import Transition from "../components/Transition";
+import { motion } from "framer-motion";
 
 function Login() {
   const [err, setErr] = useState(null);
@@ -38,7 +38,12 @@ function Login() {
   };
 
   return (
-    <div className="form-container">
+    <motion.div
+      className="form-container"
+      intial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h2>Login</h2>
       <Formik
         initialValues={initialValues}
@@ -71,10 +76,8 @@ function Login() {
       <Link className="login" to="/Register">
         Don`t have an account? Register here.
       </Link>
-    </div>
+    </motion.div>
   );
 }
 
-const WrapperLogin = Transition(Login);
-
-export default WrapperLogin;
+export default Login;

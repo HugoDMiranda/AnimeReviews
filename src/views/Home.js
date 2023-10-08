@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 import Axios from "axios";
 import { useLocation } from "react-router-dom";
 import { AuthContext } from "../context/authContext.js";
-import Transition from "../components/Transition";
+import { motion } from "framer-motion";
 
 function Home() {
   const { currentUser } = useContext(AuthContext);
@@ -73,7 +73,13 @@ function Home() {
   };
 
   return (
-    <main className="home-container">
+    <motion.main
+      className="home-container"
+      intial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      // transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+    >
       <FilterLetters setSearchInput={setSearchInput} />
       <Filters setSearchInput={setSearchInput} />
       <div className="info-container">
@@ -128,10 +134,8 @@ function Home() {
             })}
         </div>
       </div>
-    </main>
+    </motion.main>
   );
 }
 
-const WrapperHome = Transition(Home);
-
-export default WrapperHome;
+export default Home;
