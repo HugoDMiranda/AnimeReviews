@@ -4,6 +4,7 @@ import "../sass/Register.css";
 import Axios from "axios";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import Transition from "../components/Transition";
 
 function Register() {
   const [err, setErr] = useState(null);
@@ -102,4 +103,6 @@ function Register() {
   );
 }
 
-export default Register;
+const WrapperRegister = Transition(Register);
+
+export default WrapperRegister;

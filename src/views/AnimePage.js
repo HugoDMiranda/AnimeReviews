@@ -9,6 +9,7 @@ import * as yup from "yup";
 import { AiFillDelete, AiOutlineCheck } from "react-icons/ai";
 import { RxUpdate, RxCross1 } from "react-icons/rx";
 import filters from "../data/filters.json";
+import Transition from "../components/Transition";
 
 function AnimePage() {
   let { id } = useParams();
@@ -228,4 +229,6 @@ function AnimePage() {
   );
 }
 
-export default AnimePage;
+const WrapperAnimePage = Transition(AnimePage);
+
+export default WrapperAnimePage;

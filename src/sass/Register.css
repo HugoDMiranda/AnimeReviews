@@ -41,6 +41,12 @@
   cursor: pointer;
   color: rgb(255, 0, 225);
   margin-bottom: 25px;
+  transition: 0.5s;
+}
+.form-container button:hover {
+  background-color: rgb(255, 0, 225);
+  color: white;
+  padding: 22px;
 }
 
 .login {

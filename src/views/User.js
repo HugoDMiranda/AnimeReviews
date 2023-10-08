@@ -5,6 +5,7 @@ import Axios from "axios";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { AuthContext } from "../context/authContext";
+import Transition from "../components/Transition";
 
 function User() {
   const [res, setRes] = useState(null);
@@ -125,4 +126,6 @@ function User() {
   );
 }
 
-export default User;
+const WrapperUser = Transition(User);
+
+export default WrapperUser;

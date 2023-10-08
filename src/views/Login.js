@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
 import * as yup from "yup";
 import { Formik, Form, Field } from "formik";
+import Transition from "../components/Transition";
 
 function Login() {
   const [err, setErr] = useState(null);
@@ -74,4 +75,6 @@ function Login() {
   );
 }
 
-export default Login;
+const WrapperLogin = Transition(Login);
+
+export default WrapperLogin;

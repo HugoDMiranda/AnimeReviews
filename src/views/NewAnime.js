@@ -5,6 +5,7 @@ import Axios from "axios";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import filters from "../data/filters.json";
+import Transition from "../components/Transition";
 
 function NewAnime() {
   const [animeReviewsList, setAnimeReviewsList] = useState([]);
@@ -177,4 +178,6 @@ function NewAnime() {
   );
 }
 
-export default NewAnime;
+const WrapperNewAnime = Transition(NewAnime);
+
+export default WrapperNewAnime;

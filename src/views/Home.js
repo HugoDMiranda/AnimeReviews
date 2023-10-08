@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import Axios from "axios";
 import { useLocation } from "react-router-dom";
 import { AuthContext } from "../context/authContext.js";
+import Transition from "../components/Transition";
 
 function Home() {
   const { currentUser } = useContext(AuthContext);
@@ -131,4 +132,6 @@ function Home() {
   );
 }
 
-export default Home;
+const WrapperHome = Transition(Home);
+
+export default WrapperHome;
