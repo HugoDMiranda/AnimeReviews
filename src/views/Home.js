@@ -75,10 +75,10 @@ function Home() {
   return (
     <motion.main
       className="home-container"
-      intial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      // transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+      initial={{ opacity: 0, x: -300, transition: { duration: 0.1 } }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+      transition={{ type: "tween", duration: 1 }}
     >
       <FilterLetters setSearchInput={setSearchInput} />
       <Filters setSearchInput={setSearchInput} />

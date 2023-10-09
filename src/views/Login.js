@@ -40,9 +40,10 @@ function Login() {
   return (
     <motion.div
       className="form-container"
-      intial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ opacity: 0, x: -300, transition: { duration: 0.1 } }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+      transition={{ type: "tween", duration: 1 }}
     >
       <h2>Login</h2>
       <Formik

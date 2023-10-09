@@ -9,7 +9,8 @@ import * as yup from "yup";
 import { AiFillDelete, AiOutlineCheck } from "react-icons/ai";
 import { RxUpdate, RxCross1 } from "react-icons/rx";
 import filters from "../data/filters.json";
-import transition from "../components/transition";
+import { motion } from "framer-motion";
+// import transition from "../components/transition";
 
 function AnimePage() {
   let { id } = useParams();
@@ -89,7 +90,13 @@ function AnimePage() {
   };
 
   return (
-    <div className="animeReview">
+    <motion.div
+      className="animeReview"
+      initial={{ opacity: 0, x: -300, transition: { duration: 0.1 } }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+      transition={{ type: "tween", duration: 1 }}
+    >
       {updateAnime ? (
         <Formik
           initialValues={initialValues}
@@ -225,7 +232,7 @@ function AnimePage() {
       {/* <p>Posted {moment(id.date).fromNow()}</p> */}
 
       <Reviews animeComments={animeComments} animePageId={animePage.id} />
-    </div>
+    </motion.div>
   );
 }
 

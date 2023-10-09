@@ -1,5 +1,12 @@
 @import "./Varibles/Varibles.scss";
 
+.motion-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .newAnimePage-container {
   @include pageContainer();
   width: 100%;
