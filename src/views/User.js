@@ -52,82 +52,86 @@ function User() {
       exit={{ opacity: 0, x: 300, transition: { duration: 0.1 } }}
       transition={{ type: "tween", duration: 0.5 }}
     >
-      <h2>Your account</h2>
-      <div className="register-form">
-        <label for="name">Your name:</label>
-        <h2 className="user-name">{currentUser.name}</h2>
-      </div>
-      {!password ? (
+      {currentUser ? (
         <>
-          <button onClick={() => setPassword(true)}>
-            Do you want to change your password?
-          </button>
-          {res === "Your password was successfully changed" && (
-            <span className="successMessage ">{res}</span>
+          <h2>Your account</h2>
+          <div className="register-form">
+            <label for="name">Your name:</label>
+            <h2 className="user-name">{currentUser.name}</h2>
+          </div>
+          {!password ? (
+            <>
+              <button onClick={() => setPassword(true)}>
+                Do you want to change your password?
+              </button>
+              {res === "Your password was successfully changed" && (
+                <span className="successMessage ">{res}</span>
+              )}
+            </>
+          ) : (
+            <Formik
+              initialValues={initialValues}
+              onSubmit={changePassword}
+              validationSchema={userSchema}
+            >
+              <Form className="register-form">
+                <button onClick={() => setPassword(false)}>
+                  Don't want to change your password?
+                </button>
+                <h4>Change your password</h4>
+                <label for="name">Your password</label>
+                <Field
+                  autoComplete="off"
+                  type="password"
+                  placeholder="*********"
+                  id="oldPassword"
+                  name="oldPassword"
+                />
+                <ErrorMessage
+                  name="oldPassword"
+                  component="span"
+                  className="errorMessage"
+                />
+                <label for="password">New password</label>
+                <Field
+                  autoComplete="off"
+                  type="password"
+                  placeholder="*********"
+                  id="newPassword"
+                  name="newPassword"
+                />
+                <ErrorMessage
+                  name="newPassword"
+                  component="span"
+                  className="errorMessage"
+                />
+                <label for="email">Confirm new password</label>
+                <Field
+                  autoComplete="off"
+                  type="password"
+                  placeholder="*********"
+                  id="repPassword"
+                  name="repPassword"
+                />
+                <ErrorMessage
+                  name="repPassword"
+                  component="span"
+                  className="errorMessage"
+                />
+                <button type="submit" className="button-submit">
+                  Change password
+                </button>
+                {res !== "Your password was successfully changed" && (
+                  <span className="errorMessage">{res}</span>
+                )}
+              </Form>
+            </Formik>
           )}
+          <Link className="register" to="/">
+            Get back to home page.
+          </Link>
         </>
-      ) : (
-        <Formik
-          initialValues={initialValues}
-          onSubmit={changePassword}
-          validationSchema={userSchema}
-        >
-          <Form className="register-form">
-            <button onClick={() => setPassword(false)}>
-              Don't want to change your password?
-            </button>
-            <h4>Change your password</h4>
-            <label for="name">Your password</label>
-            <Field
-              autoComplete="off"
-              type="password"
-              placeholder="*********"
-              id="oldPassword"
-              name="oldPassword"
-            />
-            <ErrorMessage
-              name="oldPassword"
-              component="span"
-              className="errorMessage"
-            />
-            <label for="password">New password</label>
-            <Field
-              autoComplete="off"
-              type="password"
-              placeholder="*********"
-              id="newPassword"
-              name="newPassword"
-            />
-            <ErrorMessage
-              name="newPassword"
-              component="span"
-              className="errorMessage"
-            />
-            <label for="email">Confirm new password</label>
-            <Field
-              autoComplete="off"
-              type="password"
-              placeholder="*********"
-              id="repPassword"
-              name="repPassword"
-            />
-            <ErrorMessage
-              name="repPassword"
-              component="span"
-              className="errorMessage"
-            />
-            <button type="submit" className="button-submit">
-              Change password
-            </button>
-            {res !== "Your password was successfully changed" && (
-              <span className="errorMessage">{res}</span>
-            )}
-          </Form>
-        </Formik>
-      )}
-      <Link className="register" to="/">
-        Get back to home page.
-      </Link>
+      ) : null}
     </motion.div>
   );
 }
