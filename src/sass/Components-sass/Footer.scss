@@ -1,8 +1,7 @@
 @import "../Varibles/Varibles.scss";
 
 .footer {
-  margin-top: 30px;
-  // background-color: rgb(179, 179, 179);
+  background-color: $secondColor;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +10,7 @@
     text-decoration: none;
     color: white;
     &:hover {
-      color: black;
+      color: $secondColor;
     }
   }
   .footer-logo {

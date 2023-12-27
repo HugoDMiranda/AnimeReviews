@@ -17,7 +17,7 @@
 }
 .addAnime .addLink {
   color: white;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   border: 3px solid white;
   border-radius: 10px;
   width: 150px;
@@ -29,6 +29,6 @@
 
 .addLink:hover {
   background-color: white;
-  color: rgb(255, 0, 225);
-  border-color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
+  border-color: rgb(123, 198, 192);
 }/*# sourceMappingURL=AddAnime.css.map */

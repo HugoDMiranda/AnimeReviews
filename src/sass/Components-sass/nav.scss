@@ -20,8 +20,8 @@
 
     .logo {
       width: 50px;
-      background-color: white;
-      border: 2px solid white;
+      background-color: $secondColor;
+      border: 2px solid $secondColor;
       border-radius: 25px;
       filter: contrast(150%);
     }
@@ -89,7 +89,7 @@
             .navbar-link {
               background-color: $pink;
               text-decoration: none;
-              color: white;
+              color: $secondColor;
               padding: 10px 10px;
               width: 200px;
               border-radius: 25px;

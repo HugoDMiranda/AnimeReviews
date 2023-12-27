@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 30px;
+  background-color: rgba(20, 33, 32, 0.939);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   color: white;
 }
 .footer a:hover {
-  color: black;
+  color: rgba(20, 33, 32, 0.939);
 }
 .footer .footer-logo {
   width: 50px;
@@ -36,7 +36,7 @@
   color: black;
 }
 .footer .footer-ref {
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   padding: 5px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;

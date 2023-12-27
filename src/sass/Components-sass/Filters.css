@@ -7,15 +7,15 @@
   flex-wrap: wrap;
 }
 .filters .search {
-  border: 1px solid rgb(255, 0, 225);
+  border: 1px solid rgb(123, 198, 192);
   padding: 10px;
   border-radius: 5px;
   margin: 5px;
 }
 .filters .dropdown .dropdownMenu button {
   background-color: white;
-  border: 3px solid rgb(255, 0, 225);
-  color: rgb(255, 0, 225);
+  border: 3px solid rgb(123, 198, 192);
+  color: rgb(123, 198, 192);
   width: 200px;
   cursor: pointer;
   border-radius: 15px;
@@ -28,12 +28,12 @@
   z-index: 999;
 }
 .filters .dropdown .dropdownMenu button:hover {
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
   border-color: white;
 }
 .filters .dropdown .dropdownMenu button:focus {
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
   border-color: white;
   border-bottom-left-radius: 0px;
@@ -47,7 +47,7 @@
 .filters .dropdown .dropdownMenu .menu {
   position: absolute;
   background-color: white;
-  border: 3px solid rgb(255, 0, 225);
+  border: 3px solid rgb(123, 198, 192);
   border-top: none;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -69,11 +69,11 @@
   display: flex;
 }
 .filters .dropdown .dropdownMenu .menu li:hover {
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
 }
 .filters .dropdown .dropdownMenu .menu .link {
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
   text-decoration: none;
   width: 100%;
   height: 100%;

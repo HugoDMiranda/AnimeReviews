@@ -39,19 +39,19 @@
   padding: 20px;
   border-radius: 10px;
   cursor: pointer;
-  color: rgb(255, 0, 225);
+  color: rgba(20, 33, 32, 0.939);
   margin-bottom: 25px;
   transition: 0.5s;
 }
 .form-container button:hover {
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
   padding: 22px;
 }
 
 .login {
   background-color: none;
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
   text-decoration: underline;
   margin-top: 20px;
 }/*# sourceMappingURL=Register.css.map */

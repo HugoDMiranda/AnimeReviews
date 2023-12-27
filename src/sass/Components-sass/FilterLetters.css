@@ -1,7 +1,7 @@
 .letras-container {
   width: 90%;
   display: flex;
-  background-color: white;
+  background-color: rgba(20, 33, 32, 0.939);
   margin: 10px;
   border-radius: 20px;
 }
@@ -23,9 +23,9 @@
 .letras button {
   margin: 0;
   padding: 0;
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
   font-weight: 400;
   border: none;
-  background-color: white;
+  background-color: rgba(20, 33, 32, 0.939);
   padding: 0 6px;
 }/*# sourceMappingURL=FilterLetters.css.map */

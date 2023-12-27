@@ -1,6 +1,6 @@
 .comment-container .user-comment {
   float: right;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   box-shadow: inset 14px 14px 22px 14px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   margin: 10px;
@@ -9,7 +9,7 @@
   align-items: center;
   width: 80%;
   flex-direction: column;
-  color: white;
+  color: rgba(20, 33, 32, 0.939);
 }
 .comment-container .user-comment p {
   text-align: justify;
@@ -51,9 +51,9 @@
   margin-top: 5px;
 }
 .comment-container .user-comment .ratio-name {
-  background-color: white;
-  color: rgb(255, 0, 225);
-  border: 1px solid rgb(255, 0, 225);
+  background-color: rgba(20, 33, 32, 0.939);
+  color: rgb(123, 198, 192);
+  border: 1px solid rgb(123, 198, 192);
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -75,10 +75,10 @@
   flex-wrap: wrap;
 }
 .comment-container .user-comment .comment-buttons button {
-  border: 1px solid rgb(255, 0, 225);
+  border: 1px solid rgb(123, 198, 192);
   background-color: white;
   display: flex;
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
   border-radius: 15px;
   padding: 5px;
   transition: 0.5s;
@@ -87,7 +87,7 @@
 }
 .comment-container .user-comment .comment-buttons button:hover {
   border-color: white;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
 }
 .comment-container .user-comment .comment-buttons button {
@@ -104,9 +104,9 @@
   align-items: center;
   width: 80%;
   flex-direction: column;
-  background: #ffffff;
+  background: rgba(20, 33, 32, 0.939);
   box-shadow: 14px 14px 22px 14px rgba(0, 0, 0, 0.1);
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
 }
 .comment-container .other-comment p {
   text-align: justify;
@@ -137,10 +137,10 @@
   flex-wrap: wrap;
 }
 .comment-container .other-comment .comment-buttons button {
-  border: 1px solid rgb(255, 0, 225);
+  border: 1px solid rgb(123, 198, 192);
   background-color: white;
   display: flex;
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
   border-radius: 15px;
   padding: 5px;
   transition: 0.5s;
@@ -149,7 +149,7 @@
 }
 .comment-container .other-comment .comment-buttons button:hover {
   border-color: white;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
 }
 .comment-container .other-comment .comment-buttons button {
@@ -158,8 +158,8 @@
   justify-content: center;
 }
 .comment-container .other-comment .ratio-name {
-  background-color: rgb(255, 0, 225);
-  color: white;
+  background-color: rgb(123, 198, 192);
+  color: rgba(20, 33, 32, 0.939);
   border: 1px solid white;
   display: flex;
   align-items: flex-start;

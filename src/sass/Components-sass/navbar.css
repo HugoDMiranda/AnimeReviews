@@ -1,11 +1,11 @@
 nav {
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
 }
 
 .navlink {
   background-color: white;
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
   margin: 2px 5px;
   border-radius: 20px;
   opacity: 0.8;
@@ -17,7 +17,7 @@ nav {
 }
 
 .navuser {
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
   border: 2px solid white;
   font-weight: 700;
@@ -29,5 +29,5 @@ nav {
 
 .navlink:hover {
   opacity: 1;
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
 }/*# sourceMappingURL=navbar.css.map */

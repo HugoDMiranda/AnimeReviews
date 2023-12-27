@@ -1,7 +1,7 @@
 .last {
   list-style: none;
-  background-color: white;
-  color: rgb(255, 0, 225);
+  background-color: rgba(20, 33, 32, 0.939);
+  color: rgb(123, 198, 192);
   margin: 5px;
   border-radius: 25px;
   font-size: 12px;
@@ -18,7 +18,7 @@
   flex: 4;
 }
 .last .last-type {
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
   border-radius: 10px;
   padding: 2px 7px;

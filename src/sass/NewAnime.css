@@ -36,7 +36,7 @@
 }
 .newAnimePage-container-info input,
 .newAnimePage-container-info select {
-  border: 1px solid rgb(255, 0, 225);
+  border: 1px solid rgb(123, 198, 192);
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
@@ -68,7 +68,7 @@
 }
 .newAnimePage-container-info-button button {
   border: 1px solid white;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   display: flex;
   color: white;
   border-radius: 15px;
@@ -78,9 +78,9 @@
   margin: 5px;
 }
 .newAnimePage-container-info-button button:hover {
-  border-color: rgb(255, 0, 225);
+  border-color: rgb(123, 198, 192);
   background-color: white;
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
 }
 .newAnimePage-container .newAnimeSynopsis {
   padding: 0;

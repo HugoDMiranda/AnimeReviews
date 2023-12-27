@@ -6,7 +6,7 @@
     background-color: $pink;
     box-shadow: inset 14px 14px 22px 14px rgba(0, 0, 0, 0.1);
     @include comment();
-    color: white;
+    color: $secondColor;
 
     textarea {
       width: 90%;
@@ -24,7 +24,7 @@
     }
 
     .ratio-name {
-      background-color: white;
+      background-color: $secondColor;
       color: $pink;
       border: 1px solid $pink;
       display: flex;
@@ -62,7 +62,7 @@
 
   .other-comment {
     @include comment();
-    background: #ffffff;
+    background: $secondColor;
     box-shadow: 14px 14px 22px 14px rgba(0, 0, 0, 0.1);
     color: $pink;
 
@@ -82,7 +82,7 @@
 
     .ratio-name {
       background-color: $pink;
-      color: white;
+      color: $secondColor;
       border: 1px solid white;
       display: flex;
       align-items: flex-start;

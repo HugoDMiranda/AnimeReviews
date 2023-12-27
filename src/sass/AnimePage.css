@@ -41,13 +41,13 @@
   border-radius: 10px;
 }
 .animePage-container .newAnimeInf h1 {
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
   margin: 0;
   font-weight: 700;
 }
 .animePage-container .newAnimeInf h2 {
   color: white;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   margin: 0;
   padding: 2px 15px;
   border-radius: 25px;
@@ -70,7 +70,7 @@
 }
 .animePage-container .newAnimeInf input,
 .animePage-container .newAnimeInf select {
-  border: 1px solid rgb(255, 0, 225);
+  border: 1px solid rgb(123, 198, 192);
   padding: 5px;
   border-radius: 5px;
   margin: 5px;
@@ -84,7 +84,7 @@
 }
 .animePage-container .newAnimeInf p,
 .animePage-container .newAnimeInf h4 {
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
 }
 .animePage-container .newAnimeInf h3,
 .animePage-container .newAnimeInf h2 {
@@ -131,13 +131,13 @@
   flex: 4;
 }
 .animePage-container .animeInf h1 {
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
   margin: 0;
   font-weight: 700;
 }
 .animePage-container .animeInf h2 {
   color: white;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   margin: 0;
   padding: 2px 15px;
   border-radius: 25px;
@@ -169,7 +169,7 @@
 .animePage-container .animeInf .animeData h4 {
   border: 2px solid white;
   border-radius: 25px;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   color: white;
   padding: 4px 15px;
 }
@@ -190,11 +190,11 @@
 }
 .animePage-container .animeSynopsis {
   background-color: white;
-  color: rgb(255, 0, 225);
+  color: rgba(20, 33, 32, 0.939);
   margin: 10px 30px;
   text-align: justify;
   padding: 20px;
-  border: 1px solid rgb(255, 0, 225);
+  border: 1px solid rgb(123, 198, 192);
   border-radius: 20px;
 }
 .animePage-container .button-container {
@@ -205,7 +205,7 @@
 }
 .animePage-container .button-container button {
   border: 1px solid white;
-  background-color: rgb(255, 0, 225);
+  background-color: rgb(123, 198, 192);
   display: flex;
   color: white;
   border-radius: 15px;
@@ -215,7 +215,7 @@
   margin: 5px;
 }
 .animePage-container .button-container button:hover {
-  border-color: rgb(255, 0, 225);
+  border-color: rgb(123, 198, 192);
   background-color: white;
-  color: rgb(255, 0, 225);
+  color: rgb(123, 198, 192);
 }/*# sourceMappingURL=AnimePage.css.map */

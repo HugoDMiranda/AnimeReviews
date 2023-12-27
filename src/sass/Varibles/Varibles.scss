@@ -5,8 +5,10 @@ $breakpoints: (
 );
 
 //COLOR
-$pink: rgb(255, 0, 225);
-$backgroundColor: linear-gradient(180deg, $pink, rgba(255, 52, 52, 0) 80%);
+$secondColor: rgba(20, 33, 32, 0.939);
+$pink: rgb(123, 198, 192);
+// $pink: rgb(255, 0, 225);
+$backgroundColor: linear-gradient(180deg, $pink, rgba(0, 0, 0, 0.753) 80%);
 
 //GlassEffect
 @mixin glassEffect($padding, $margin) {
@@ -56,7 +58,7 @@ $backgroundColor: linear-gradient(180deg, $pink, rgba(255, 52, 52, 0) 80%);
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
-    color: $pink;
+    color: $secondColor;
     margin-bottom: 25px;
     transition: 0.5s;
 
@@ -169,7 +171,7 @@ $backgroundColor: linear-gradient(180deg, $pink, rgba(255, 52, 52, 0) 80%);
 
 @mixin synopsis {
   background-color: white;
-  color: $pink;
+  color: $secondColor;
   margin: 10px 30px;
   text-align: justify;
   padding: 20px;
