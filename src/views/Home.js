@@ -21,13 +21,17 @@ function Home() {
 
   const category = useLocation().search;
 
-  const filterSearch = animeReviewsList.filter((Anime) => {
-    return searchInput.toLowerCase() === ""
-      ? Anime
-      : searchInput === "0-9"
-      ? Anime.animeName.includes(0 || 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9)
-      : Anime.animeName.toLowerCase().startsWith(searchInput);
-  });
+  const filterSearch = Array.isArray(animeReviewsList)
+    ? animeReviewsList.filter((Anime) => {
+        return searchInput.toLowerCase() === ""
+          ? Anime
+          : searchInput === "0-9"
+          ? Anime.animeName.includes(
+              0 || 1 || 2 || 3 || 4 || 5 || 6 || 7 || 8 || 9
+            )
+          : Anime.animeName.toLowerCase().startsWith(searchInput);
+      })
+    : [];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -86,8 +90,8 @@ function Home() {
         <div className="last-container">
           <h3 className="last-text">Last Anime</h3>
           <ul className="last-animes">
-            {animeReviewsList &&
-              animeReviewsList.map((Anime) => {
+            {Array.isArray(animeReviewsList) &&
+              animeReviewsList?.map((Anime) => {
                 return (
                   <LastAnime
                     AnimeName={Anime.animeName}
@@ -119,7 +123,7 @@ function Home() {
         </div>
         <div className="best-container">
           <h3 className="best-text">Best Anime</h3>
-          {animeReviewsList &&
+          {Array.isArray(animeReviewsList) &&
             animeReviewsList.map((Anime) => {
               if (animeRatio(Anime.id) >= 4.8) {
                 return (

@@ -129,7 +129,7 @@ function AnimePage() {
                 type="text"
                 component="select"
               >
-                {filters[1].map((type) => {
+                {filters[1]?.map((type) => {
                   return <option value={type}>{type}</option>;
                 })}
               </Field>
@@ -144,7 +144,7 @@ function AnimePage() {
                 type="text"
                 component="select"
               >
-                {filters[2].map((status) => {
+                {filters[2]?.map((status) => {
                   return <option value={status}>{status}</option>;
                 })}
               </Field>
@@ -207,24 +207,24 @@ function AnimePage() {
               </div>
             ) : null}
             <div className="anime-name-ratio">
-              <h1>{animePage.animeName}</h1>
+              <h1>{animePage?.animeName}</h1>
               <h2>{isNaN(animeRatio) ? "--" : animeRatio}</h2>
             </div>
             <div className="animeData">
               <div>
                 <h4>Type</h4>
-                <p>{animePage.animeType}</p>
+                <p>{animePage?.animeType}</p>
               </div>
               <div>
                 <h4>Year</h4>
-                <p>{animePage.animeYear}</p>
+                <p>{animePage?.animeYear}</p>
               </div>
               <div>
                 <h4>Status</h4>
-                <p>{animePage.animeStatus}</p>
+                <p>{animePage?.animeStatus}</p>
               </div>
             </div>
-            <p className="animeSynopsis">{animePage.animeSynopsis}</p>
+            <p className="animeSynopsis">{animePage?.animeSynopsis}</p>
           </div>
         </div>
       )}
