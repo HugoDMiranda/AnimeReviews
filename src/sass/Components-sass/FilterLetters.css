@@ -26,6 +26,9 @@
   color: rgb(123, 198, 192);
   font-weight: 400;
   border: none;
-  background-color: rgba(20, 33, 32, 0.939);
+  background-color: transparent;
   padding: 0 6px;
+}
+.letras button:hover {
+  color: white;
 }/*# sourceMappingURL=FilterLetters.css.map */

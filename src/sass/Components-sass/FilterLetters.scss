@@ -28,6 +28,10 @@
   color: $pink;
   font-weight: 400;
   border: none;
-  background-color: $secondColor;
+  background-color: transparent;
   padding: 0 6px;
+
+  &:hover {
+    color: white;
+  }
 }
