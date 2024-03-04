@@ -55,7 +55,7 @@ function Nav() {
                 <span className="user-logo out"></span>
               )}
               <h2>{currentUser?.name}</h2>
-              <h4>#{currentUser?.id}</h4>
+              <h4>{currentUser ? `# ${currentUser.id}` : null}</h4>
             </div>
           </div>
         </div>
